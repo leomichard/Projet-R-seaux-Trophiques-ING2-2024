@@ -1,0 +1,8 @@
+#ifndef PROJET_RESEAUX_TROPHIQUES_2C_CONNEXITE_H
+#define PROJET_RESEAUX_TROPHIQUES_2C_CONNEXITE_H
+
+#include "graphe.h"
+
+int estConnecte(Graphe *graphe);
+
+#endif //PROJET_RESEAUX_TROPHIQUES_2C_CONNEXITE_H

@@ -1,0 +1,8 @@
+#ifndef PROJET_RESEAUX_TROPHIQUES_2C_ESPECES_SPECIALES_H
+#define PROJET_RESEAUX_TROPHIQUES_2C_ESPECES_SPECIALES_H
+
+#include "graphe.h"
+
+void detecterEspecesSpeciales(Graphe *graphe);
+
+#endif //PROJET_RESEAUX_TROPHIQUES_2C_ESPECES_SPECIALES_H

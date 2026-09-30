@@ -1,0 +1,85 @@
+digraph Graphe {
+graph [rankdir=TB]; // Orientation de haut en bas
+    0 [label="Plantes\nPopulation: 10000", color=limegreen, style=filled];
+    1 [label="Baies_herbe\nPopulation: 10000", color=orangered, style=filled];
+    2 [label="Ecorces\nPopulation: 10000", color=limegreen, style=filled];
+    3 [label="Zooplancton\nPopulation: 10000", color=darkcyan, style=filled];
+    4 [label="Plante_aquatiques\nPopulation: 4000", color=darkcyan, style=filled];
+    5 [label="Noix_Graines\nPopulation: 10000", color=darkcyan, style=filled];
+    6 [label="Insectes\nPopulation: 100000", color=darkcyan, style=filled];
+    7 [label="Ecureuil\nPopulation: 5000", color=saddlebrown, style=filled];
+    8 [label="Caribou\nPopulation: 400", color=saddlebrown, style=filled];
+    9 [label="Invertebres\nPopulation: 50000", color=saddlebrown, style=filled];
+    10 [label="Crustaces\nPopulation: 10000", color=saddlebrown, style=filled];
+    11 [label="Amphibiens\nPopulation: 10000", color=red4, style=filled];
+    12 [label="Petits_oiseaux\nPopulation: 8000", color=saddlebrown, style=filled];
+    13 [label="Petites_mamiferes\nPopulation: 6000", color=red4, style=filled];
+    14 [label="Saumon_truites\nPopulation: 5000", color=red4, style=filled];
+    15 [label="Oiseaux_charognares\nPopulation: 2000", color=red4, style=filled];
+    16 [label="Loups_cotiers\nPopulation: 400", color=orangered, style=filled];
+    17 [label="Ours_noir\nPopulation: 500", color=orangered, style=filled];
+    18 [label="Grizzly\nPopulation: 200", color=orangered, style=filled];
+    19 [label="Cougar\nPopulation: 250", color=orangered, style=filled];
+    6 -> 0 [label="50%"];
+    6 -> 4 [label="50%"];
+    7 -> 1 [label="40%"];
+    7 -> 5 [label="60%"];
+    8 -> 0 [label="10%"];
+    8 -> 1 [label="30%"];
+    8 -> 2 [label="40%"];
+    8 -> 5 [label="20%"];
+    9 -> 0 [label="50%"];
+    9 -> 5 [label="40%"];
+    9 -> 6 [label="10%"];
+    10 -> 4 [label="60%"];
+    10 -> 6 [label="20%"];
+    10 -> 9 [label="20%"];
+    11 -> 6 [label="40%"];
+    11 -> 0 [label="30%"];
+    11 -> 2 [label="20%"];
+    11 -> 9 [label="10%"];
+    12 -> 1 [label="30%"];
+    12 -> 0 [label="30%"];
+    12 -> 5 [label="10%"];
+    12 -> 6 [label="20%"];
+    12 -> 9 [label="10%"];
+    13 -> 10 [label="10%"];
+    13 -> 11 [label="5%"];
+    13 -> 9 [label="45%"];
+    13 -> 7 [label="20%"];
+    13 -> 1 [label="10%"];
+    13 -> 12 [label="10%"];
+    14 -> 3 [label="60%"];
+    14 -> 4 [label="40%"];
+    15 -> 13 [label="35%"];
+    15 -> 10 [label="35%"];
+    15 -> 12 [label="10%"];
+    15 -> 14 [label="20%"];
+    16 -> 1 [label="80%"];
+    16 -> 14 [label="9%"];
+    17 -> 1 [label="100%"];
+    17 -> 14 [label="30%"];
+    18 -> 11 [label="14%"];
+    18 -> 13 [label="14%"];
+    18 -> 10 [label="40%"];
+    18 -> 14 [label="30%"];
+    19 -> 8 [label="40%"];
+    19 -> 13 [label="60%"];
+// nœud pour la legende
+    legend [
+    label="Couleurs :
+    Producteurs primaires       vert
+    Consommateurs primaires     bleu
+    Predateurs primaires        orange
+    Predateurs intermediaires   rouge/orange
+    Predateurs finaux           rouge
+    Consommateurs/proies        marron	",
+    shape=note,
+    color=grey,
+    fontsize=10,
+    fontname ="Helvetica-Bold"
+    width=0.1, // Largeur 
+    height=0.1, // Hauteur 
+    margin=0.14 // Marges internes (reduction)
+    ];
+}

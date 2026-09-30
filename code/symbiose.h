@@ -1,0 +1,8 @@
+#ifndef PROJET_RESEAUX_TROPHIQUES_2C_SYMBIOSE_H
+#define PROJET_RESEAUX_TROPHIQUES_2C_SYMBIOSE_H
+
+#include "graphe.h"
+
+void detecterSymbiose(Graphe *graphe);
+
+#endif //PROJET_RESEAUX_TROPHIQUES_2C_SYMBIOSE_H

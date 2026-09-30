@@ -1,0 +1,8 @@
+#ifndef PROJET_RESEAUX_TROPHIQUES_2C_MAILLONS_H
+#define PROJET_RESEAUX_TROPHIQUES_2C_MAILLONS_H
+
+#include "graphe.h"
+
+int contientCycle(Graphe *graphe);
+
+#endif //PROJET_RESEAUX_TROPHIQUES_2C_MAILLONS_H
